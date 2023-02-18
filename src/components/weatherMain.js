@@ -1,7 +1,13 @@
 export default function WeatherMain({weather}){
     return (
         <div>
-            <div> <h1>tengo sueño</h1>{weather?.current.temp_c} </div>
+            <div>{weather?.location.name} </div>
+            <div>{weather?.location.country} </div>
+            <div>
+              <div>
+                <img src={weather?.current.condition.icon} width="128" alt="weather icon" />
+              </div>
+            </div>
         </div>
     )
 }

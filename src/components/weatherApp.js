@@ -36,7 +36,7 @@ export default function WeatherApp(){
     return (
         <div>
             <WeatherForm onChangeCity={handleChangeCity} />
-            <div> {weather?.current.temp_c} </div>
+            <weatherMain weather={weather} />
         </div>
     )
 }
